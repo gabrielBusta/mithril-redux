@@ -26,5 +26,5 @@ export default (mapAttrs, mapState) => Component => {
     view: wrap(Component.view),
     oncreate: Component.oncreate ? wrap(Component.oncreate) : undefined 
   }
-  return Wrapped;
+  return Wrapped
 }
