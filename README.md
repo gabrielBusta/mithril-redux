@@ -1,21 +1,7 @@
-[![npm version](https://badge.fury.io/js/mithril-redux.svg)](https://badge.fury.io/js/mithril-redux)
-
 # Mithril Redux
 This package provides utilites for working with Redux within a Mithril application. Similar to `react-redux`.
 
 It doesn't alter the redrawing functionality of Mithril, other than providing some basic middleware below. It does not subscribe to the Redux `store`. It generally allows you to continue to work with Mithril as normal, except with replacing your models with the `store`.
-
-See https://github.com/colinbate/mithril-redux-starter for a sample useage.
-
-It does not rely on you using the `mjsx` Babel plugin.
-
-## Usage
-
-Install with:
-
-    npm install --save mithril-redux
-
-Unfortunately there isn't a UMD version available at this time.
 
 ## API
 
@@ -95,9 +81,3 @@ export default function configureStore(initialState) {
   )(createStore);
   return createModifiedStore(rootReducer, initialState);
 ```
-
-## Future Work (possibly separate packages)
-
-* [ ] Integrate with `m.request` to get data into the store.
-* [ ] Create some sort of middleware for promises which calls `m.startComputation`/`m.endComputation`
-* [ ] Integrate with `m.route` for params and potentially more.
