@@ -12,6 +12,5 @@ export default {
     store.subscribe(render)
     Provider.store = store
     store.dispatch(didInit())
-    return Component
   }
 }
